@@ -1,65 +1,45 @@
-import { NavLink  }  from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { HiShoppingBag } from "react-icons/hi2";
 const Navbar = () => {
-  return (
-    <>
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+	return (
+		<>
+			<nav className="navbar navbar-expand-lg bg-body-tertiary">
 				<div className="container-fluid">
-					<NavLink to='./' className="navbar-brand" href="#">
-						Navbar logo 
-					</NavLink >
-					<button
-                    
-						className="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent"
-						aria-expanded="false"
-						aria-label="Toggle navigation">
-						<span className="navbar-toggler-icon" />
-					</button>
+					<Link to="./" className="navbar-brand">
+						<HiShoppingBag />		 <p>E-commerce App</p>
+					</Link>
 					<div className="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul className="navbar-nav ms-auto mb-2 mb-lg-0">
 							<li className="nav-item">
-								<NavLink to= './'
-									className="nav-link active"
-									aria-current="page"
-									href="#">
+								<NavLink to="./" className="nav-link active">
 									Home
-								</NavLink >
+								</NavLink>
 							</li>
 							<li className="nav-item">
-								<NavLink to='./register' className="nav-link" >
+								<NavLink to="./category" className="nav-link">
+									Category
+								</NavLink>
+							</li>
+							<li className="nav-item">
+								<NavLink to="./register" className="nav-link">
 									Register
-								</NavLink >
+								</NavLink>
 							</li>
-                            <li className="nav-item">
-								<NavLink to='./login' className="nav-link" >
-                                Login
-								</NavLink >
+							<li className="nav-item">
+								<NavLink to="./login" className="nav-link">
+									Login
+								</NavLink>
 							</li>
-                            <li className="nav-item">
-								<NavLink to='./cart' className="nav-link" >
-                                Cart (0)
-								</NavLink >
+							<li className="nav-item">
+								<NavLink to="./cart" className="nav-link">
+									Cart (0)
+								</NavLink>
 							</li>
-							
 						</ul>
-						<form className="d-flex" role="search">
-							<input
-								className="form-control me-2"
-								type="search"
-								placeholder="Search"
-								aria-label="Search"
-							/>
-							<button className="btn btn-outline-success" type="submit">
-								Search
-							</button>
-						</form>
 					</div>
 				</div>
 			</nav>
-    </>
-  )
-}
-export default Navbar
+		</>
+	);
+};
+export default Navbar;

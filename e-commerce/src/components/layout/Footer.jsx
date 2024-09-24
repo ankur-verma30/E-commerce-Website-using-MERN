@@ -1,8 +1,14 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
-  return (
-    <div className="bg-dark text-light p-3">
-        <h4 className="text-center">All Right Reserverd &copy; Ankur Verma</h4>
-    </div>
-  )
-}
-export default Footer
+	return (
+		<div className=" footer">
+			<h5 className="text-center">All Right Reserverd &copy; Ankur Verma</h5>
+			<p className="text-center mt-3">
+				<Link to="/about">About </Link> | <Link to="/contact">Contact </Link> | 
+				 <Link to="/policy">Policy</Link>
+			</p>
+		</div>
+	);
+};
+export default Footer;
