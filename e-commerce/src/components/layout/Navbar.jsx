@@ -6,7 +6,7 @@ const Navbar = () => {
 			<nav className="navbar navbar-expand-lg bg-body-tertiary">
 				<div className="container-fluid">
 					<Link to="./" className="navbar-brand">
-						<HiShoppingBag />		 <p>E-commerce App</p>
+						<HiShoppingBag />		 <p>Ecommerce App</p>
 					</Link>
 					<div className="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul className="navbar-nav ms-auto mb-2 mb-lg-0">
