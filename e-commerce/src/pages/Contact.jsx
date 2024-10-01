@@ -1,6 +1,6 @@
-import Layout from "../components/layout/layout"
+import Layout from "../components/layout/Layout"
 import { BiMailSend, BiPhoneCall,BiSupport } from "react-icons/bi"
-
+//make contact page more attractive
 const Contact = () => {
   return (
     <Layout>

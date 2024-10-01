@@ -1,4 +1,5 @@
-import Layout from "../components/layout/layout";
+import Layout from "../components/layout/Layout";
+// make about page more attractive
 const About = () => {
 	return (
 		<Layout title={'About Us - Ecommerce App'}>

@@ -1,5 +1,5 @@
-import Layout from "../components/layout/layout"
-
+import Layout from "../components/layout/Layout"
+// make policy page more attractive
 const Policy = () => {
   return (
     <Layout>
